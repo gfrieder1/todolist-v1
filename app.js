@@ -21,8 +21,8 @@ app.listen(port, function(req, res) {
 
 // Global Variables
 
-var items = ["Buy food", "Cook food", "Eat food"];
-var workItems = [];
+const items = ["Buy food", "Cook food", "Eat food"];
+const workItems = [];
 
 // '/'
 
