@@ -64,3 +64,10 @@ app.post("/work", function(req, res) {
 
   res.redirect("/work");
 });
+
+// '/about'
+
+app.get("/about", function(req, res) {
+  const title = "About";
+  res.render("about");
+});
