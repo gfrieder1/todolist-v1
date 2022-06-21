@@ -2,6 +2,7 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
+const date = require(__dirname + "/public/js/date.js");
 
 const app = express();
 const port = 5000;
@@ -26,10 +27,10 @@ var workItems = [];
 // '/'
 
 app.get("/", function(req, res) {
-  const title = "Tasks";
+
 
   res.render("list", {
-    listTitle: title,
+    listTitle: date(),
     listItems: items,
     route: "/",
   });
