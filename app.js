@@ -27,10 +27,8 @@ var workItems = [];
 // '/'
 
 app.get("/", function(req, res) {
-
-
   res.render("list", {
-    listTitle: date(),
+    listTitle: date.getDate(),
     listItems: items,
     route: "/",
   });
